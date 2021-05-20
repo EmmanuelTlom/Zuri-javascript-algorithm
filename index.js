@@ -11,10 +11,8 @@ function convertFahrToCelsius(temp) {
   }
 
   if (Array.isArray(temp)) {
-    console.log(
-      `[${temp}] is not a valid number but a/an ${typeof temp} type.`
-    );
-    return `[${temp}] is not a valid number but a/an ${typeof temp} type.`;
+    console.log(`[${temp}] is not a valid number but a/an array type.`);
+    return `[${temp}] is not a valid number but a/an array type.`;
   } else if (typeof temp === "object") {
     console.log(
       `${JSON.stringify(
@@ -33,7 +31,7 @@ function convertFahrToCelsius(temp) {
   }
 }
 
-convertFahrToCelsius(0);
+convertFahrToCelsius(true);
 
 function checkYuGiOh(n) {
   //if (typeof n !== "number" || typeof n == "string") {
@@ -48,7 +46,7 @@ function checkYuGiOh(n) {
   }
 
   if (typeof n === "boolean") {
-    console.log(`invalid parameter: ${JSON.stringify(n)}`);
+    console.log(`invalid parameter: of ${typeof n} type`);
     return;
   }
 
@@ -82,4 +80,4 @@ function checkYuGiOh(n) {
   //}
 }
 
-checkYuGiOh("5");
+checkYuGiOh(true);
