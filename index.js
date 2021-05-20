@@ -1,5 +1,5 @@
 function convertFahrToCelsius(temp) {
-  if (typeof temp === "number") {
+  if (typeof temp === "number" || typeof temp === "string") {
     let C = ((temp - 32) * 5) / 9;
     console.log(C.toFixed(4));
     //console.log(`${temp} is a valid number but a/an ${typeof temp} type.`);
@@ -31,7 +31,7 @@ function convertFahrToCelsius(temp) {
   }
 }
 
-convertFahrToCelsius(0);
+convertFahrToCelsius("0");
 
 function checkYuGiOh(n) {
   //if (typeof n !== "number" || typeof n == "string") {
