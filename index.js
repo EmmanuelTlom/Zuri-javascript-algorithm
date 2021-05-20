@@ -43,13 +43,18 @@ function checkYuGiOh(n) {
   //}
 
   if (isNaN(n) === true) {
-    console.log(`invalid parameter: ${n}`);
+    console.log(`invalid parameter: ${JSON.stringify(n)}`);
+    return;
+  }
+
+  if (typeof n === "boolean") {
+    console.log(`invalid parameter: ${JSON.stringify(n)}`);
     return;
   }
 
   const arr = [];
   //if (n > 0) {
-  for (let i = 0; i <= n; i++) {
+  for (let i = 1; i <= n; i++) {
     if (i > 0 && i % 2 === 0 && i % 3 === 0 && i % 5 === 0) {
       arr.push("Yu-Gi-Oh");
     } else if (i > 0 && i % 2 === 0 && i % 3 === 0) {
@@ -71,7 +76,6 @@ function checkYuGiOh(n) {
     //return "invalid";
 
     //arr.push(i);
-    // array starts from 0 and then 1 returns 1 and 2 returns 'yu' and so on
 
     console.log(arr);
   }
