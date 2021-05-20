@@ -31,7 +31,7 @@ function convertFahrToCelsius(temp) {
   }
 }
 
-convertFahrToCelsius(true);
+convertFahrToCelsius(0);
 
 function checkYuGiOh(n) {
   //if (typeof n !== "number" || typeof n == "string") {
@@ -80,4 +80,4 @@ function checkYuGiOh(n) {
   //}
 }
 
-checkYuGiOh(true);
+checkYuGiOh("5");
